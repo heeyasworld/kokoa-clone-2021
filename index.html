@@ -4,7 +4,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/75f55f0a8e.js" crossorigin="anonymous"></script>
+    <title>Welcome to KokoaTalk</title>
 </head>
 <body>
     <div class="status-bar">   
@@ -29,20 +31,18 @@
         <p class="welcome-header__text">If you have a Kokoa Account,<br/>log in with your email or phone number.</p>
     </header>
 
-    <form id="login-form">
-        <input type="text" required placeholder="Email or phone number">
-        <input type="password" required placeholder="Password" minlength="10">
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" required placeholder="Email or phone number">
+        <input name="password" type="password" required placeholder="Password" minlength="10">
         <input type="submit" value="Log In">
         <a href="#">Find Kokoa Account or Password</a>
     </form>
 
-
-    <!-- icon -->
-    <script src="https://kit.fontawesome.com/75f55f0a8e.js" crossorigin="anonymous"></script>
     <!-- current time -->
     <script>
         var dt = new Date();
         document.getElementById("datetime").innerHTML =(("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
     </script>
+</script>
 </body>
 </html>
