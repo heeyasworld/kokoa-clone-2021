@@ -20,6 +20,9 @@
 }
 
 .nav__notification {
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
   position: absolute;
   left: 15px;
   bottom: 15px;
@@ -27,6 +30,9 @@
 
 .nav__setting {
   position: absolute;
-  left: 30px;
-  top: -15px;
+  left: 32px;
+  top: -12px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
 }
