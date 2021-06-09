@@ -25,18 +25,46 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <div class="screen-header__icons"><i class="fas fa-chevron-left fa-2x"></i></div>
-        <h1 class="screen-header__title">Settings</h1>
-        <div class="screen-header__icons">
-            <span>
-                <a class="screen-header__link" href="#"><i class="fas fa-search fa-lg"></i></a>
-            </span> 
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>    
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-lg"></i>
         </div>
     </header>
 
     <main class="main-screen">
-        
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+                <div class="settings__setting-column">
+                </div>
+            </li>           
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-flask"></i>
+                    <span>Kokoa Lab</span>
+                </div>
+                <div class="settings__setting-column">
+                </div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-info-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-column">Latest Version</div>
+            </li>     
+        </ul>        
     </main>
 
     <nav class="nav">
@@ -47,6 +75,7 @@
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">14</span>
                     <i class="far fa-comment fa-2x"></i>
                 </a>
             </li>
