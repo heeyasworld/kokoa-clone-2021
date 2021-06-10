@@ -28,3 +28,34 @@
   justify-content: space-between;
   color: var(--main-color);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* hidden 해놔야지 애니메이션 완료된 상태에서도 html a링크 정상 작동 */
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  z-index: 2;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  /* forwards 설정하면 애니메이션 끝난 상태로에서 돌아가지 않고 유지됨 */
+  animation-delay: 0.5s;
+}
+
+.status-bar {
+  z-index: 1;
+}
